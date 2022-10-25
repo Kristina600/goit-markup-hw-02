@@ -1,21 +1,24 @@
 /* General styles */
 
- :root {
-   --color-background-title: #ffffff;
-   --color-text: #212121;
-   --color-logo-header-hover: #2196f3;
-   --color-line-down-head: #ececec;
-   --color-logo-studio: #000000;
-   --color-mailto-tel-details: #757575;
-   --color-background-hero-footer: #2f303a;
-   --color-title-hero: #ffffff;
-   --color-section-team: #f5f4fa;
-   --color-details-about: #f5f5f5;
-} 
+:root {
+  --color-background-title: #ffffff;
+  --color-text: #212121;
+  --color-logo-header-hover: #2196f3;
+  --color-focus: #188ce8;
+  --color-line-down-head: #ececec;
+  --color-logo-studio: #000000;
+  --color-mailto-tel-details: #757575;
+  --color-background-hero-footer: #2f303a;
+  --color-title-hero: #ffffff;
+  --color-section-team: #f5f4fa;
+  --color-details-about: #f5f5f5;
+}
 
 body {
   font-family: "Roboto", sans-serif;
   background: var(--color-background-title);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 .link {
   text-decoration: none;
@@ -28,36 +31,29 @@ body {
 /* Header */
 .logo-web {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
   color: var(--color-logo-header-hover);
 }
 
 .logo-studio {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
   color: var(--color-logo-studio);
 }
 
 .header-list-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--color-text);
 }
 
 .contact-list {
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--color-mailto-tel-details);
@@ -77,19 +73,29 @@ body {
   font-size: 44px;
   line-height: calc(60 / 44);
   color: var(--color-background-title);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--color-background-title);
+  cursor: pointer;
 }
 
 .header-button {
   background: var(--color-logo-header-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.header-button:hover,
+.header-button:focus {
+  background-color: var(--color-focus);
 }
 
 /* Main */
@@ -113,19 +119,13 @@ body {
 }
 
 .list-details-title {
-  font-weight: 700;
-  font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-text);
 }
 
 .description-details {
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--color-mailto-tel-details);
 }
 
@@ -136,10 +136,8 @@ body {
 }
 
 .title-about {
-  font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
   color: var(--color-text);
 }
 
@@ -150,26 +148,20 @@ body {
 }
 
 .title-about-team {
-  font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
   color: var(--color-text);
 }
 
 .team-title {
-  font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
   color: var(--color-text);
 }
 
 .about-team-title {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
   color: var(--color-mailto-tel-details);
 }
 
@@ -181,8 +173,8 @@ body {
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--color-text);
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -193,12 +185,12 @@ body {
 .btn-active:hover,
 .btn-active:focus {
   background: var(--color-logo-header-hover);
+  color: #ffffff;
 }
 
 /* Proects */
 
 .title-proect {
-  font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
@@ -206,13 +198,10 @@ body {
 }
 
 .about-proect {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
   color: var(--color-mailto-tel-details);
 }
-
 
 /* Footer */
 
@@ -222,29 +211,19 @@ footer {
 
 .foter-studio {
   font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
   color: var(--color-background-title);
 }
 
 .adress-list {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--color-background-title);
 }
 
 .adress-contact-list {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
